@@ -1,0 +1,90 @@
+/* 子顶部导航 */
+@import '../../../variable';
+
+.main_header_sub_page{
+  width: 100%;
+  min-width: 1200px;
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 8px rgba(153,153,153,0.2);
+  -moz-box-shadow: 0px 1px 8px rgba(153,153,153,0.2);
+  box-shadow: 0px 1px 8px rgba(153,153,153,0.2);
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .header-main{
+    width: 1200px;
+    margin: 0 auto;
+
+    .pull-left{
+      float: left;
+      font-size: 0;
+
+      .logo_wrapper{
+        vertical-align: middle;
+
+        img{
+          padding-top: 15px;
+          padding-bottom: 14px;
+          border: none;
+        }
+      }
+
+      .jumpNewPage,.guide{
+        margin-left: 20px;
+        vertical-align: middle;
+        padding: 15px 10px;
+        font-size: 16px;
+        color: #333;
+
+        &:hover{
+          color: #38adff;
+        }
+      }
+    }
+
+    .pull-right{
+      float: right;
+      margin-top: 24px;
+      font-size: 0;
+
+      a{
+        line-height: 20px;
+        padding: 6px;
+        font-size: 14px;
+        color: #333;
+
+        &.guide{
+          margin-left: 28px;
+          margin-right: 28px;
+        }
+
+        &.hotline{
+          cursor: text;
+        }
+
+        &.login:hover,
+        &.register:hover,
+        &.purchaseCenter:hover,
+        &.sellerCenter:hover,
+        &.logout:hover,
+        &.guide:hover{
+          color: #38adff;
+        }
+      }
+
+      span{
+        display: inline-block;
+        line-height: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 14px;
+        color: #bfbfbf;
+      }
+    }
+  }
+}

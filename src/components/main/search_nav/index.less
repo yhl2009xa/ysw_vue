@@ -1,0 +1,129 @@
+/* 顶部搜索导航 */
+@import '../../../variable';
+
+.main_searchNav_page{
+  width: 1200px;
+  margin: 0 auto;
+
+  .search_box{
+    .logo_wrapper{
+      float: left;
+
+      .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        height: 60px;
+
+        img{
+          border: none;
+        }
+      }
+    }
+
+    .search_form{
+      float: right;
+      margin-top: 30px;
+      font-size: 0;
+
+      .search_input{
+        vertical-align: middle;
+        outline: none;
+        width: 480px;
+        height: 40px;
+        padding: 6px 10px;
+        border: 1px solid #38adff;
+        border-right: none;
+        font-size: 12px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+
+      /* input框占位符 */
+      ::-webkit-input-placeholder{
+        color: #999;
+      }
+      ::-moz-placeholder{
+        color: #999;
+        opacity: 1;
+      }
+      :-moz-placeholder{
+        color: #999;
+        opacity: 1;
+      }
+      :-ms-input-placeholder{
+        color: #999;
+      }
+
+      .search_btn{
+        border: none;
+        outline: none;
+        vertical-align: middle;
+        width: 120px;
+        height: 40px;
+        line-height: 28px;
+        padding: 6px 12px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "MicrosoftYaHei";
+        background-color: #38adff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main_nav{
+    height: 40px;
+    line-height: 40px;
+
+    .nav_title{
+      float: left;
+
+      span{
+        display: inline-block;
+        width: 160px;
+        padding-left: 30px;
+        background-color: #38adff;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .menu_content{
+      float: left;
+      margin-left: 40px;
+      list-style: none;
+
+      li{
+        float: left;
+
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+
+        a{
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-decoration: none;
+          color: #333;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+
+          &.active{
+            color: #38adff;
+          }
+
+          &:hover{
+            color: #38adff;
+          }
+        }
+      }
+    }
+  }
+}

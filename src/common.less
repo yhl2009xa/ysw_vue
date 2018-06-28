@@ -1,0 +1,85 @@
+@import "variable";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+html,body{
+  font-family: "MicrosoftYaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a img{
+  border: none;
+}
+
+[class*="js_c_"]{
+  position: relative;
+}
+
+.max_wrap{
+  width: 1200px;
+}
+
+.cow_btn{
+  border: 1px solid @primary_color;
+  background-color: white;
+  color: @primary_color;
+  font-size: 14px;
+  border-radius: 2px;
+  font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+  //border-radius: 0;
+}
+
+.cow_btn_primary{
+  background-color: @primary_color;
+  color: white;
+}
+
+.cow_btn[disabled="disabled"]{
+  border-color: #dedede;
+  background-color: #dedede;
+  color: white;
+}
+
+.cow_btn_disabled{
+  cursor: not-allowed !important;
+  border-color: #dedede !important;
+  background-color: #dedede !important;
+}
+
+.clearfix:after,
+.clearfix:before{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.display-flex(){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.justify-content(@P){
+  -webkit-box-pack:     @P;
+  -ms-flex-pack:    @P;
+  -webkit-justify-content:   @P;
+  justify-content:   @P;
+}
+
+.flex-shrink(@percent){
+  -webkit-box-flex:  @percent ;
+  -webkit-flex-shrink:  @percent;
+  flex-shrink:  @percent;
+}
+
+.align-items(@P){
+  -webkit-box-align: @P;
+  -ms-flex-align: @P;
+  -webkit-align-items: @P;
+  align-items: @P;
+}
